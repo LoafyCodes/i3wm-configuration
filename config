@@ -92,9 +92,9 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-set $workspace1 "1: Terminal "
-set $workspace2 "2: FireFox 龜"
-set $workspace3 "3: "
+set $workspace1 "1:Terminal "
+set $workspace2 "2: Firefox 龜"
+set $workspace3 "3: GUI "
 set $workspace4 "4: "
 set $workspace5 "5: "
 set $workspace6 "6: "
@@ -192,3 +192,4 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 exec_always feh --bg-scale /home/laropatr/Pictures/landscape.jpeg
+exec_always compton
