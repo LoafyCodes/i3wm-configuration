@@ -169,8 +169,6 @@ bar {
 	position top
 	mode dock
 	modifier None
-
-
 }
 
 # Pulse Audio controls
