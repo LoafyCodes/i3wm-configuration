@@ -1,0 +1,29 @@
+sudo apt install -y libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev autoconf libxcb-xrm0 libxcb-xrm-dev automake libsnack2-dev libxcb-shape0-dev autoconf libev-dev build-essential git
+
+git clone https://www.github.com/Airblader/i3 i3-gaps
+cd i3-gaps
+
+autoreconf --force --install
+rm -rf build/
+mkdir -p build && cd build/
+../configure --prefix=/usr --sysconfdir=/etc --disable-sanitizers
+make && sudo make install
+
+https://drive.google.com/file/d/1hy9f...
+
+step 1: ### To activate i3 gaps resizing ###
+mod+shift+g  
+step 2: ### tap (o) or (i) to select gaps to resize ###
+
+step 3: shift+ (-) or (+) to make changes
+
+step 4: esp button to exit
+
+### Or add this alone if you are coming across any error in your i3config###
+#############################
+### settings for i3-gaps: ###
+#############################
+
+# Set inner/outer gaps
+gaps inner 12
+gaps outer 4
